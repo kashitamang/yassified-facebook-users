@@ -6,7 +6,7 @@ create table users (
 	id INT,
 	name VARCHAR(50),
 	gender VARCHAR(50),
-	yassified VARCHAR(50)
+	yassified BOOLEAN
 );
 insert into users (id, name, gender, yassified) values (1, 'Norri Cockarill', 'Transsexual Man', false);
 insert into users (id, name, gender, yassified) values (2, 'Orelle Sotworth', 'Agender', false);

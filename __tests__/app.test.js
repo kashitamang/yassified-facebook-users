@@ -13,7 +13,7 @@ describe('backend-express-template routes', () => {
     expect(res.body.length).toEqual(30);
     expect(res.body[0]).toEqual({
       id: expect.any(Number),
-      name: expect.any(String),
+      name: expect.any(Boolean),
     });
   });
 
