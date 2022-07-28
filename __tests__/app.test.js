@@ -18,15 +18,15 @@ describe('backend-express-template routes', () => {
       });
   });
 
-  // it('/users/:id should return user detail', async () => {
-  //   const res = await request(app).get('/cats/1');
-  //   expect (res.body).toEqual({
-  //     id: 1,
-  //     name: 'Norri Cockarill',
-  //     gender: 'Transsexual Man',
-  //     yassified: false,
-  //   });
-  // });
+  it('/users/:id should return user detail', async () => {
+    const res = await request(app).get('/users/1');
+    expect (res.body).toEqual({
+      id: 1,
+      name: 'Norri Cockarill',
+      gender: 'Transsexual Man',
+      yassified: false,
+    });
+  });
 
   afterAll(() => {
     pool.end();
